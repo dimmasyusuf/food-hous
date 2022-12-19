@@ -11,7 +11,7 @@
     "lint": "eslint ./src",
     "e2e": "codeceptjs run --steps",
     "build-image": "node sharp.js",
-    "deploy": "npm run build && gh-pages -d dist -b master"
+    "deploy": "npm run build-image && gh-pages -d dist"
   },
   "keywords": [],
   "author": "Dimas Yusuf Qurohman <dimasyusufqurohman@gmail.com>",
