@@ -1,7 +1,8 @@
 {
   "name": "food-house",
   "version": "1.0.0",
-  "description": "",
+  "homepage": "https://dimmasyusuf.github.io/food-house",
+  "description": "food house is a website where you can find the best restaurant near you",
   "main": "index.js",
   "scripts": {
     "start-dev": "webpack-dev-server --config webpack.dev.js",
@@ -9,7 +10,8 @@
     "test": "karma start",
     "lint": "eslint ./src",
     "e2e": "codeceptjs run --steps",
-    "build-image": "node sharp.js"
+    "build-image": "node sharp.js",
+    "deploy": "npm run build-image && gh-pages -d dist"
   },
   "keywords": [],
   "author": "Dimas Yusuf Qurohman <dimasyusufqurohman@gmail.com>",
@@ -26,6 +28,7 @@
     "eslint": "^8.29.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-webpack-plugin": "^2.4.2",
